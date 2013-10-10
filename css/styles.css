@@ -1,0 +1,139 @@
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Ribeye);
+
+body {
+	margin: 10px;
+	background-image: url(../img/background.jpg);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.content-box {
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 5px 5px 10px;
+	background-image: url(../img/background2.jpg);
+	padding: 18px;
+}
+
+.header img {
+	float: left;
+	padding: 10px;
+}
+
+.company_name {
+	color: #330033;
+	font-family: 'Ribeye', cursive;
+	font-weight: bold;
+	font-size: 54px;
+	padding: 10px;
+}
+
+.motto {
+	color: #CC3300;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top: 5px;
+	margin-bottom:10px;	
+}
+
+nav ul {
+	background-color: #660033;
+	width: 80%;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+nav a:link,
+nav a:visited {
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #FF9A40;
+	border-radius: 5px;
+}
+
+.homepage_content img {
+	padding: 10px;
+}
+
+.general_info {
+	color: #660066;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	padding: 5px;
+	text-align: center;
+}
+
+/*menu stuff*/
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	padding-left: 10px;
+	font-style: italic;
+}
+
+.sub_header {
+	color: #660066;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.pizza_sizes {
+	color: #CC3300;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	padding: 5px;
+	text-align: center;
+}
+
+.category {
+	color: #660066;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	padding: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.subcategory {
+	color: #CC3300;
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.not_pizza {
+	font-weight: bold;
+	text-align: center;
+}
+
+/*about us*/
+
+.anecdote {
+	text-indent: 30px;
+	padding: 5px;
+}
