@@ -1,39 +1,108 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Dawg Pizza</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<meta name="author" content="wongk8/1129664">
+	    <meta charset="UTF-8">
+	    <meta name="description" content="Dawg Pizza Home Page">
+	    <meta name="author" content="wongk8/1129664">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <title>Dawg Pizza</title>
+	    <link rel="shortcut icon" href="img/shortcut.png">
+	    
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
 	</head>
 	
 	<body>
 		<div class="content-box">
-			<div class="header">
-				<a href="index.html"><img src="img/logo.png" alt="logo" height=113 width=150></a>
-				<h1 class="company_name">Dawg Pizza</h1>
-				<p class="motto">Awesome wood-fired pizza with fresh ingredients baked to order. Come in and eat, or call us for delivery!</p>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="menu.html">Menu</a></li>
-						<li><a href="about_us.html">About Us</a></li>
-					</ul>
-				</nav>
-			</div>
-			
-			<div class="homepage_content">
-				<div style="text-align: center;"><IMG SRC="img/homepage_pizza.jpg" ALT="image" class="push-left" width=450 height=300></div>
-				<div id="center-in=bar">
-					<ul>		
-						<li class="general_info">Business hours: 10:00am to 11:00pm, Monday through Saturday.</li>
-						<li class="general_info">Phone: 206-555-1212</li>
-						<li class="general_info">Address: <a href="http://goo.gl/maps/ep7Hn">University Way NE, Seattle, WA 98105</a></li>
-						<li class="general_info">Email us at: <a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></li>
-						<li class="general_info">Follow us on twitter! <a href="https://twitter.com/dawgpizzasea">@DawgPizzaSea</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>				
+			<div class="container">
+			    <nav class="navbar navbar-default" role="navigation">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+			                <span class="sr-only">Toggle Navigation</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>                      
+			            </button>
+			            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Dawg Pizza logo"></a>
+			        </div>
+				    <div class="collapse navbar-collapse pawnee-navbar-menu">
+				        <ul class="nav navbar-nav">
+				            <li class="active"><a href="index.html">Home</a></li>
+				            <li><a href="menu.html">Menu</a></li>
+				            <li><a href="about_us.html">About Us</a></li>
+				        </ul>
+				    </div>
+			    </nav>
+
+				<div id="pawnee-carousel" class="carousel slide">
+				    <!-- slide indicators -->
+				    <ol class="carousel-indicators">
+				        <li data-target="#pawnee-carousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#pawnee-carousel" data-slide-to="1"></li>
+				        <li data-target="#pawnee-carousel" data-slide-to="2"></li>
+				    </ol>
+
+				    <!-- slides --> 
+				    <div class="carousel-inner">
+				        <!-- slide -->
+				        <div class="item active">
+				            <img src="img/homepage_pizza.jpg" alt="Homepage Pizza">
+				            <div class="carousel-caption">
+				                <p></p>
+				            </div>
+				        </div>
+				        
+				        <!-- slide -->
+				        <div class="item">
+				            <img src="img/order_counter.jpg" alt="Order Counter">
+				            <div class="carousel-caption">
+				                <p></p>
+				            </div>
+				        </div>
+				        
+				        <!-- slide -->
+				        <div class="item">
+				            <img src="img/wood_fire_pizza.jpg" alt="Wood Fire Pizza">
+				            <div class="carousel-caption">
+				                <p></p>
+				            </div>
+				        </div>
+				    </div> <!-- slides -->
+
+				    <!-- left-right controls -->
+				    <a class="left carousel-control" href="#pawnee-carousel" data-slide="prev">
+				        <span class="icon-prev"></span>
+				    </a>
+				    <a class="right carousel-control" href="#pawnee-carousel" data-slide="next">
+				        <span class="icon-next"></span>
+				    </a>
+				</div> <!-- carousel -->
+			</div> <!-- main -->
+
+			<div class="row">
+				<div class="homepage_content">
+					<div id="center-in=bar">
+						<ul>		
+							<li class="general_info">Business hours: 10:00am to 11:00pm, Monday through Saturday.</li>
+							<li class="general_info">Phone: 206-555-1212</li>
+							<li class="general_info">Address: <a href="http://goo.gl/maps/ep7Hn">University Way NE, Seattle, WA 98105</a></li>
+							<li class="general_info">Email us at: <a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></li>
+							<li class="general_info">Follow us on twitter! <a href="https://twitter.com/dawgpizzasea">@DawgPizzaSea</a></li>
+						</ul>
+					</div>
+				</div>   
+			</div> <!-- .row -->
+
+			<!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+		    <!-- auto-play the carousel -->
+		    <script>
+		        $('.carousel').carousel();
+		    </script>
+		</div>			
 	</body>
 </html>
